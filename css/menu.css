@@ -1,0 +1,219 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.contenedor-principal {
+  margin: auto;
+  width: 87%;
+  height: auto;
+  border: 0.1rem solid rgba(255, 0, 0, 0);
+}
+
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* logo */
+
+.fixed img {
+  width: 7rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  position: fixed;
+  z-index: 50;
+}
+
+#maicra img {
+  width: 21rem;
+  margin-left: 40%;
+  position: fixed;
+}
+
+#maicra img:hover {
+  width: 22rem;
+}
+
+
+/* Portada */
+
+
+.contenedor-portada {
+  width: 100%;
+}
+
+.flex-portada{
+display: flex;
+}
+
+.titulo-portada {
+  color: #000;
+  font-size: 3rem;
+  padding: 5rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.titulo-portada span {
+  font-size: 8rem;
+  color: #E95356;
+}
+
+.titulo-img{
+  width: 34.3rem;
+}
+
+/* Sub navegacion */
+
+.menu-seccion nav {
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2rem solid black;
+}
+
+.menu-seccion a {
+  font-size: 1.5rem;
+}
+
+.menu-seccion a:hover {
+  color: #E95356;
+}
+
+
+/* menu cuerpo */
+
+.contenedor-menu {
+  width: 100%;
+  padding: 0rem 1.8rem;
+}
+
+.grid-menu {
+  max-width: 75rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+
+.grid-menu h2 {
+  margin-bottom: 0.5rem;
+  font-family: 'Akshar',
+    sans-serif;
+}
+
+.grid-menu h3 {
+  margin: 1.2rem 1.2rem;
+}
+
+.grid-menu a {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Cards */
+
+.flex-contenedor {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-menu {
+  width: 25rem;
+  background-color: aquamarine;
+  padding: 1.8rem;
+  text-align: center;
+  flex-direction: row;
+}
+
+
+.card-titulo {
+  font-size: 1.5rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.card-descripcion {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.card-subtitulo {
+  padding: 2rem;
+}
+
+.card-boton a {
+  margin-top: 4rem;
+}
+
+a:hover {
+  color: #E95356;
+}
+
+.amarillo {
+  background-color: #FFC719;
+}
+
+.rosado {
+  background-color: #E95356;
+}
+
+/* FOOTER */
+
+.contenedor-footer {
+  width: 100%;
+  padding: 3.1rem 3.1rem;
+  margin-top: 5rem;
+  border-top: 2rem solid black;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-menu {
+  box-sizing: border-box;
+  max-width: 75rem;
+  border-right: 0.1rem solid black;
+  padding: 0px 60px;
+}
+
+.footer-menu h3 {
+  margin-bottom: 0.5rem;
+  font-family: 'Akshar',
+    sans-serif;
+  margin-bottom: 1.2rem;
+}
+
+.footer-menu a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.footer-menu a:hover {
+  color: #E95356;
+}
+
+.redes {
+  border-right: none;
+}

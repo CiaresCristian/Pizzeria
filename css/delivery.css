@@ -1,0 +1,56 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.contenedor {
+  margin: auto;
+  width: 87%;
+  height: auto;
+  border: 0.1rem solid rgba(255, 0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* contenido - cartel */
+
+.cartel {
+  margin-top: 12rem;
+
+}
+
+h1 {
+  font-size: 10rem;
+  margin-bottom: 0;
+  color: #E95356;
+}
+
+h2 {
+  font-size: 5rem;
+  margin-top: 0;
+  text-align: left ;
+  margin-bottom: 0;
+}
+
+.cartel h3 {
+  font-size: 3rem;
+  margin-top: 2rem;
+}

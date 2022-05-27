@@ -1,0 +1,212 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+} 
+
+body {
+  height: 100%;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.contenedor {
+  margin: auto;
+  width: 87%;
+  height: auto;
+  border: 0.1rem solid rgba(255, 0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+}
+
+.inicio {
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+/* transicion */
+
+.slider {
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+
+  animation: cambio 20s infinite alternate
+
+}
+
+.slider li {
+  list-style: none;
+  width: 100%;
+  
+}
+
+.slider img {
+  width: 100%;
+  height: 50rem;
+}
+
+@keyframes cambio {
+  0% {margin-left: 0%;}
+  20% {margin-left: 0%;}
+
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+}
+
+/* logos
+
+.img1 {
+  position: fixed;
+  width: 9rem;
+
+
+    queria usar el 
+    position fixed
+
+
+
+} */
+
+.fixed img {
+  /* position: fixed; */
+  width: 7rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  position: fixed;
+  z-index: 50;
+}
+
+#maicra img {
+  width: 21rem;
+  margin-left: 40%;
+  position: fixed;
+  z-index: 50;
+  /* border-bottom-left-radius: 75px;
+  border-bottom-right-radius: 100px; */
+}
+
+
+
+#maicra img:hover {
+  width: 22rem;
+}
+
+/* articulos--article */
+
+section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+  border-top: 2rem solid rgb(0, 0, 0);
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5.6rem;
+}
+
+
+.seccion img {
+  max-width: 100%;
+  display: grid;
+}
+
+
+.seccion a {
+  text-align: center;
+  display: block;
+  position: relative;
+  padding: 2rem;
+  font-size: 2rem;
+  line-height: 1.25rem;
+  background-color: rgba(237, 216, 188, 0);
+  border-bottom-left-radius: 0.62rem;
+  border-bottom-right-radius: 0.62rem;
+}
+
+a .seccion {
+  margin-top: 3rem;
+}
+
+.seccion :hover {
+  background-color: rgb(250, 235, 215);
+  color: #EB0078;
+  /* border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: auto; */
+  /* width: 101%; */
+}
+
+/* section :hover {
+  background-color: rgb(244, 255, 119);
+  border: 3px solid red;
+} */
+
+/* --footer-- */
+
+
+
+footer {
+  width: 100%;
+  padding: 3.1rem 0rem;
+  padding-top: 2rem;
+  border-top: 2rem solid black;
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+
+.contenedor-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 75rem;
+  margin: auto;
+}
+
+.contenedor_footer {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0rem 2.5rem;
+  border-right: 0.1rem solid black;
+}
+
+.contenedor_footer a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: normal;
+  font-family: 'Roboto Slab',
+    serif;
+  margin-bottom: 5px;
+}
+
+.contenedor_footer a:hover {
+  color: rgb(255, 25, 25);
+}
+
+.redes {
+  border-right: none;
+}
